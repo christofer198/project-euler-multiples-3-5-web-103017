@@ -13,7 +13,7 @@ class Multiples
     #   end
     # end
     # sum
-    (1...@limit).select{|i| i%3==0 || i%5==0}
+    (1...@limit).map{|i| i%3==0 || i%5==0}
   end
 
   def sum_multiples
