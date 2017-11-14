@@ -8,12 +8,13 @@ class Multiples
   def collect_multiples
     i = 0
     sum = []
-    while i != @limit-1
-      i += 1
+    sum = []
+    for i in (1...@limit) do
       if i%3==0 || i%5==0
         sum << i
       end
     end
+    sum
     sum
   end
 
